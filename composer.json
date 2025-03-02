@@ -1,0 +1,16 @@
+{
+    "name": "priyansh/itcompany",
+    "autoload": {
+        "psr-4": {
+            "Priyansh\\Itcompany\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "InvoRed"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.5"
+    }
+}
