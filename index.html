@@ -1,487 +1,823 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InvoRed</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="icon" href="./images/image.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <script src="./js/main.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>InvoRed — Next-Gen AI & Digital Engineering Studio</title>
+  <meta name="description" content="InvoRed is a premier AI and digital engineering studio. High-performance web applications, custom Generative AI pipelines, mobile products, and brand systems, engineered with fixed milestone transparency.">
+  <meta name="theme-color" content="#07080A">
+  <link rel="icon" type="image/png" href="./images/image.png">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300..900;1,300..900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Main Interaction Engine -->
+  <script src="./js/main.js" defer></script>
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo"><img src="./images/image.png" alt=""></a>
-        <div class="fas fa-bars"></div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#service">services</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#team">team</a></li>
-                <li><a href="careers.html">career</a></li>
-                <li><a href="#contact">contact</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
-        </nav>
-    </header>
 
-  <section id="home" class="home">
-      <h1>Bring your Business Online</h1>
-      <h2>with InvoRed Services</h2>
-    <div class="wave wave1"></div>
-    <div class="wave wave2"></div>
-    <div class="wave wave3"></div>
-  </section>
+  <!-- Floating Glass Navigation -->
+  <header class="nav" id="nav">
+    <a class="brand" href="#top">
+      <span class="brand-icon"><i>9</i></span>
+      <img src="./images/image.png" alt="InvoRed" class="brand-logo-img">
+      <span class="brand-txt">Invo<span>Red</span></span>
+    </a>
 
-  <section id="about" class="about">
-    <h1 class="heading">about us</h1>
-    <div class="row">
-        <div class="content">
-            <h3>We make creativity work for your brand!</h3>
-            <p>Ours is a team of creatives that is brainstorming on great ideas,<b> all. the. time.</b><br>
-                With our skills put together, you get an ensemble capable of doing anything and everything your brand needs.</p>
-            <a href="#"><button class="btn">Read More</button></a>
-        </div>
+    <nav class="links" aria-label="Primary">
+      <a href="#top">Home</a>
+      <a href="#about">About</a>
+      <a href="#service">Capabilities</a>
+      <a href="#work">Work</a>
+      <a href="#counters">Impact</a>
+      <a href="#team">Team</a>
+      <a href="careers.html">Careers</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="navr">
+      <a class="nav-cta" href="#start">
+        <span>Start a project</span>
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Toggle Menu">
+        <span></span>
+      </button>
     </div>
-  </section>
+  </header>
 
-  <div class="pt-5 pb-5" style="background-color: #f2f2f2;">
-    <div class="container">
-      <div class="row">
-        <div class="section-head col-sm-12" id="service">
-          <h1>Our Services</h1>
-          <p>We help you to build high-quality digital solutions and products as well as deliver a wide range of related professional services. We are providing world-class service to our clients.
-            </p>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-laptop"></i></span>
-            <h6>Web App Development</h6>
-            <p>Our Custom Web Development Services Include Both Front-End And Back-End Development. Whether It Is Enhancing An Existing App Or Architecting An Enterprise App, Our Developers Are Up For The Challenge.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="item"> <span class="icon feature_box_col_two"><i class="fa fa-android"></i></span>
-            <h6>Mobile App Development</h6>
-            <p>We Have Expertise In Creating Multi-Platform Mobile App Solutions For Both Android And IOS Devices. Using PhoneGap, Xamarin, And React Native, We Offer Custom Mobile App That Runs Smoothly On Multiple Platforms.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="item"> <span class="icon feature_box_col_three"><i class="fa fa-magic"></i></span>
-            <h6>Digital Marketing</h6>
-            <p>The digital marketing services that we provide have their own set of charms. By taking our digital marketing services, our clients will be able to increase visibility and engage with their customers at the online platform.</p>
-          </div>
-        </div>
-      </div>
+  <!-- Fullscreen Radial Clip-Path Menu (Metric9) -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <ul>
+      <li><a href="#top"><small>01</small><span>Home</span></a></li>
+      <li><a href="#about"><small>02</small><span>About</span></a></li>
+      <li><a href="#service"><small>03</small><span>Capabilities</span></a></li>
+      <li><a href="#work"><small>04</small><span>Selected Work</span></a></li>
+      <li><a href="#counters"><small>05</small><span>Impact</span></a></li>
+      <li><a href="#team"><small>06</small><span>Team</span></a></li>
+      <li><a href="careers.html"><small>07</small><span>Careers</span></a></li>
+      <li><a href="#faq"><small>08</small><span>FAQ</span></a></li>
+      <li><a href="#start"><small>09</small><span>Start a Project</span></a></li>
+    </ul>
+    <div class="menu__f">
+      <span>AI & Digital Engineering Studio</span>
+      <a href="mailto:info@invored.com">info@invored.com</a>
     </div>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-  <section class="counters">
-    <div class="container">
-        <div>
-            <i class="far fa-clock fa-4x"></i>
-            <div class="counter" data-target="13500">0</div>
-            <h3>Working Hours</h3>
-        </div>
-        <div>
-            <i class="fas fa-gift fa-4x"></i>
-            <div class="counter" data-target="720">0</div>
-            <h3>Completed Projects</h3>
-        </div>
-        <div>
-            <i class="fas fa-users fa-4x"></i>
-            <div class="counter" data-target="480">0</div>
-            <h3>Happy Clients</h3>
-        </div>
-        <div>
-            <i class="fas fa-award fa-4x"></i>
-            <div class="counter" data-target="120">0</div>
-            <h3>Awards Received</h3>
-        </div>
-    </div>
-</section>
-
-<div class="pt-5 pb-5">
-    <div class="container">
-      <div class="row">
-        <div class="section-head-1 col-sm-12" style="text-align: center;">
-          <h4 style="margin-top: -5rem;" id="portfolio"><span>Our</span> Projects</h4>
-          
-          <p>The objective of InvoRed is to enable a large number of youth to take up <br>industry-relevant skill training that will help them<br> in securing a better livelihood.
-            </p>
-        </div>
-        
-        <div class="col-lg-4 col-sm-6">
-          
-          <div class="item"> <span class="icon feature_box_col_four"><i class="fa fa-database"></i></span>
-            <h6>Project-1</h6>
-            
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.<br><br><br></p>
-          </div>
-        </div>
-        
-        <div class="col-lg-4 col-sm-6">
-          <div class="item"> <span class="icon feature_box_col_five"><i class="fa fa-upload"></i></span>
-            <h6>Project-2</h6>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.<br><br><br></p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="item"> <span class="icon feature_box_col_six"><i class="fa fa-camera"></i></span>
-            <h6>Project-3</h6>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.<br><br><br></p>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-
-<div class="communicate">
-    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-    <p>Lorem ipsum dolor sit amet.</p>
-    <a href="#contact"><button class="btn">Contact Now</button></a>
-</div>
-
-<div class="testimonials mt-100">
-    <div class="container">
-        <div class="section-header" style="text-align: center;">
-            <h2 style="margin-top: -15rem;">Testimonials</h2>
-            <p style="font-size: 2rem;">
-                See what people have to say about us
-            </p>
-        </div>
-
-        <div class="owl-carousel testimonials-carousel">
-            <div class="testimonial-item row align-items-center">
-                <div class="testimonial-img">
-                    <img src="./images/testimonial-1.jpg" alt="Testimonial image">
-                </div>
-                <div class="testimonial-text">
-                    <h3>Person-1</h3>
-                    <h4>Designation</h4>
-                    <p>
-                        Testimonial
-
-                    </p>
-                </div>
-            </div>
-            <div class="testimonial-item row align-items-center">
-                <div class="testimonial-img">
-                    <img src="./images/testimonial-2.jpg" alt="Testimonial image">
-                </div>
-                <div class="testimonial-text">
-                    <h3>Person-2</h3>
-                    <h4>Designation</h4>
-                    <p>
-                        Testimonial
-
-                    </p>
-                </div>
-            </div>
-            <div class="testimonial-item row align-items-center">
-                <div class="testimonial-img">
-                    <img src="./images/testimonial-3.jpg" alt="Testimonial image">
-                </div>
-                <div class="testimonial-text">
-                    <h3>Person-3</h3>
-                    <h4>Designation</h4>
-                    <p>
-                        Testimonial
-
-                    </p>
-                </div>
-            </div>
-            <div class="testimonial-item row align-items-center">
-                <div class="testimonial-img">
-                    <img src="./images/testimonial-4.jpg" alt="Testimonial image">
-                </div>
-                <div class="testimonial-text">
-                    <h3>Person-4</h3>
-                    <h4>Designation</h4>
-                    <p>
-                        Testimonial
-
-                    </p>
-                </div>
-            </div>
-            <div class="testimonial-item row align-items-center">
-                <div class="testimonial-img">
-                    <img src="./images/testimonial-5.jpg" alt="Testimonial image">
-                </div>
-                <div class="testimonial-text">
-                    <h3>Person-5</h3>
-                    <h4>Designation</h4>
-                    <p>
-                        Testimonial
-
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="clients mt-100">
-    <div class="container">
-        <div class="section-header">
-            <h2>Our Clients</h2>
-            <p>
-                We don't just build softwares, we build your business.
-            </p>
-        </div>
-        <div class="owl-carousel clients-carousel">
-            <img src="./images/image.png" alt="Client Logo">
-            <img src="./images/image.png" alt="Client Logo">
-            <img src="./images/image.png" alt="Client Logo">
-            <img src="./images/image.png" alt="Client Logo">
-            <img src="./images/image.png" alt="Client Logo">
-            <img src="./images/image.png" alt="Client Logo">
-            <img src="./images/image.png" alt="Client Logo">
-            <img src="./images/image.png" alt="Client Logo">
-        </div>
-    </div>
-</div>
-<a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
-<script src="lib/jquery/jquery.min.js"></script>
-<script src="lib/jquery/jquery-migrate.min.js"></script>
-<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/waypoints/waypoints.min.js"></script>
-<script src="lib/counterup/counterup.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="lib/lightbox/js/lightbox.min.js"></script>
-
-<section class="team" style="margin-top: 7rem;">
-  <h1 class="heading" style="margin-top: -1.5rem;" id="team">our team</h1>
-  <p></p>
-  <div class="row">
-      <div class="card">
-          <div class="image">
-              <img src="./images/pexels-andrea-piacquadio-845434.jpg" alt="Team member 1">
-          </div>
-          <div class="info">
-              <h3>Schott Watkins</h3>
-              <span>Web Developer</span>
-              <div class="icons">
-                  <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-                  <a href="https://twitter.com/login" class="fab fa-twitter"></a>
-                  <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
-                  <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
-              </div>
-          </div>
-      </div>
   </div>
-  <div class="row">
-      <div class="card">
-          <div class="image">
-              <img src="./images/pexels-vinicius-wiesehofer-1130624.jpg" alt="Team member 1">
-          </div>
-          <div class="info">
-              <h3>Nicole Bell</h3>
-              <span>Mobile Developer</span>
-              <div class="icons">
-                  <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-                  <a href="https://twitter.com/login" class="fab fa-twitter"></a>
-                  <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
-                  <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="row">
-      <div class="card">
-          <div class="image">
-              <img src="./images/pexels-hussein-altameemi-2776353.jpg" alt="Team member 1">
-          </div>
-          <div class="info">
-              <h3>John Doe</h3>
-              <span>Graphic Designer</span>
-              <div class="icons">
-                  <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-                  <a href="https://twitter.com/login" class="fab fa-twitter"></a>
-                  <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
-                  <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="row">
-      <div class="card">
-          <div class="image">
-              <img src="./images/pexels-andrea-piacquadio-745136.jpg" alt="Team member 1">
-          </div>
-          <div class="info">
-              <h3>Rose Matthews</h3>
-              <span>Web Designer</span>
-              <div class="icons">
-                  <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-                  <a href="https://twitter.com/login" class="fab fa-twitter"></a>
-                  <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
-                  <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
 
-<section id="contact" class="contact">
-    <h1 class="heading">get in touch</h1>
-</section>
-<div class="contact-in">
-    <div class="contact-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30711243.17762776!2d64.4398422293091!3d20.011408266548177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1644684739958!5m2!1sen!2sin" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-    <div class="contact-form">
-        <form action="./contactme.php" method="POST">
-            <input type="text" name="name" placeholder="Name" class="contact-form-txt" required>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Contact number" maxlength="10" class="contact-form-phone">
-            <input type="email" name="email" placeholder="Email" class="contact-form-email" required>
-            <textarea placeholder="Your Message" name="message" class="contact-form-txtarea" required></textarea>
-            <input type="submit" value="Submit" name="submit" class="contact-form-btn">
+  <main id="main" tabindex="-1">
+
+    <!-- Hero Section (Metric9 Interactive Vector Canvas & 3D Card Deck) -->
+    <section class="hero" id="top">
+      <canvas class="fieldbg" id="field" aria-hidden="true"></canvas>
+
+      <div class="hero__t">
+        <p class="kick">AI & Digital Engineering Studio · Dubai & Global</p>
+        <h1 class="h1" id="h1">
+          <span class="ln"><span class="w">Next-gen</span> <span class="w">software,</span></span>
+          <span class="ln"><span class="w w--glow">intelligent</span> <span class="w">AI</span> <span class="w">&</span> <span class="w">brands,</span></span>
+          <span class="ln"><span class="w">engineered</span> <span class="w">to</span> <span class="w">scale.</span></span>
+        </h1>
+        <p class="hero__sub">
+          Five core digital crafts under one roof. Custom GenAI architectures, distributed web systems, and high-performance applications — built with fixed milestone transparency.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--solid" href="#start">
+            <span>Start a project</span>
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a class="btn btn--outline" href="#service">
+            <span>Explore capabilities</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 3D Interactive Card Deck -->
+      <div class="stagewrap" id="stagewrap">
+        <div class="stage" id="heroStage" role="region" tabindex="0" aria-label="Interactive 3D Capabilities Deck. Tap or click to deal the next discipline.">
+          <!-- Populated dynamically by main.js with 3D cards & legend -->
+        </div>
+      </div>
+
+      <div class="hero__b">
+        <span class="mono">STATUS: HIGH CAPACITY</span>
+        <span class="mono">EST. 2025 · GLOBAL ENGINEERING</span>
+      </div>
+    </section>
+
+    <!-- About Section & Bento Grid -->
+    <section class="sec about" id="about">
+      <div class="head">
+        <div>
+          <p class="kick rv">About InvoRed Studio</p>
+          <h2 class="h2 rv" data-d="1">Where creative intelligence meets deep technical execution.</h2>
+        </div>
+        <p class="lead rv" data-d="2">
+          We are a multidisciplinary team of software engineers, AI researchers, and brand architects brainstorming on breakthrough ideas, all the time. With our skills unified, you get an ensemble capable of delivering anything your brand and product needs.
+        </p>
+      </div>
+
+      <div class="about-bento">
+        <div class="bento-card rv">
+          <span class="mono">01 / CAPABILITY</span>
+          <h3>Autonomous AI & LLMs</h3>
+          <p>Production-grade agent pipelines, semantic vector search, fine-tuned model integrations, and custom reasoning workflows that transform business operations.</p>
+        </div>
+
+        <div class="bento-card rv" data-d="1">
+          <span class="mono">02 / CRAFTSMANSHIP</span>
+          <h3>Full-Stack Precision</h3>
+          <p>Hand-written, resilient frontend architectures paired with distributed, secure backend microservices engineered to process high-throughput workloads.</p>
+        </div>
+
+        <div class="bento-card rv" data-d="2">
+          <span class="mono">03 / CERTAINTY</span>
+          <h3>Milestone Delivery</h3>
+          <p>Every phase is scoped and quoted with written transparency before work starts. Zero vague hourly billing, zero lock-in, and full intellectual property ownership.</p>
+        </div>
+
+        <div class="bento-card rv" data-d="3">
+          <span class="mono">04 / RESILIENCE</span>
+          <h3>Cloud-Native Scaling</h3>
+          <p>Kubernetes-orchestrated deployments, serverless edge compute, and automated CI/CD pipelines ensuring 99.98% availability under peak loads.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Crafts / Services Section (Metric9 Interactive Tabs & 3D Art Card) -->
+    <section class="sec crafts" id="service" data-k="web">
+      <div class="head head--stack">
+        <p class="kick rv">Our Crafts</p>
+        <h2 class="h2 rv" data-d="1">Pick an engineering craft. See what it covers.</h2>
+        <p class="lead rv" data-d="2">
+          Five specialized disciplines designed and written together, so nothing is lost in translation between architecture and deployment.
+        </p>
+      </div>
+
+      <div class="cr">
+        <!-- Interactive Horizontal Tablist -->
+        <div class="cr__tabs rv" role="tablist" aria-label="Engineering Crafts">
+          <button type="button" role="tab" id="tab-web" aria-selected="true" data-k="web">
+            <span>01</span> Web Architecture
+          </button>
+          <button type="button" role="tab" id="tab-ai" aria-selected="false" data-k="ai">
+            <span>02</span> GenAI & LLMs
+          </button>
+          <button type="button" role="tab" id="tab-mobile" aria-selected="false" data-k="mobile">
+            <span>03</span> Mobile Ecosystems
+          </button>
+          <button type="button" role="tab" id="tab-cloud" aria-selected="false" data-k="cloud">
+            <span>04</span> Cloud & DevOps
+          </button>
+          <button type="button" role="tab" id="tab-brand" aria-selected="false" data-k="brand">
+            <span>05</span> Brand & Design Systems
+          </button>
+        </div>
+
+        <div class="cr__body">
+          <!-- 3D Perspective Art Card -->
+          <div class="cr__art" aria-label="Active craft visualization">
+            <div class="cr__card">
+              <!-- Dynamically rendered SVG art by main.js -->
+            </div>
+          </div>
+
+          <!-- Tab Panels -->
+          <div class="cr__panels">
+            <!-- Web Panel -->
+            <div class="cr__panel" role="tabpanel" id="panel-web" data-k="web">
+              <h3 class="cr__t">Websites & Distributed Software</h3>
+              <p class="cr__line">Hand-written web applications and the fault-tolerant software behind them.</p>
+              <p class="cr__get">
+                Crafted from scratch with zero framework bloat. From high-conversion SaaS platforms to enterprise web applications, we engineer ultra-fast, responsive web interfaces with rigorous security.
+              </p>
+              <ul class="cr__items">
+                <li>High-Performance Web Apps</li>
+                <li>Enterprise SaaS Platforms</li>
+                <li>API & Microservices Architecture</li>
+                <li>Database Modeling & Caching</li>
+                <li>Headless CMS Solutions</li>
+                <li>Real-Time Collaboration</li>
+              </ul>
+              <div class="cr__do">
+                <a class="btn btn--solid" href="#start">
+                  <span>Start a web project</span>
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- AI Panel -->
+            <div class="cr__panel" role="tabpanel" id="panel-ai" data-k="ai" hidden>
+              <h3 class="cr__t">Generative AI & Agentic Workflows</h3>
+              <p class="cr__line">Autonomous intelligence embedded directly into your core business systems.</p>
+              <p class="cr__get">
+                Beyond chat wrappers. We architect custom RAG (Retrieval-Augmented Generation) pipelines, multi-agent reasoning chains, fine-tuned domain models, and automated semantic knowledge bases.
+              </p>
+              <ul class="cr__items">
+                <li>Custom LLM Pipelines & RAG</li>
+                <li>Autonomous Multi-Agent Swarms</li>
+                <li>Vector Search & Knowledge Graphs</li>
+                <li>Private Fine-Tuned Models</li>
+                <li>Workflow Automation Engines</li>
+                <li>Model Evaluation & Guardrails</li>
+              </ul>
+              <div class="cr__do">
+                <a class="btn btn--solid" href="#start">
+                  <span>Start an AI project</span>
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Mobile Panel -->
+            <div class="cr__panel" role="tabpanel" id="panel-mobile" data-k="mobile" hidden>
+              <h3 class="cr__t">Mobile App Engineering</h3>
+              <p class="cr__line">Fluid native and cross-platform apps for iOS and Android.</p>
+              <p class="cr__get">
+                Engineered with React Native, Flutter, and native Swift/Kotlin to deliver silky 60fps animations, robust offline sync, secure biometric authentication, and integrated in-app purchases.
+              </p>
+              <ul class="cr__items">
+                <li>iOS & Android Native Apps</li>
+                <li>React Native & Flutter Ecosystems</li>
+                <li>Offline-First Data Sync</li>
+                <li>Biometric & Hardware APIs</li>
+                <li>Push Notification Telemetry</li>
+                <li>App Store Optimization (ASO)</li>
+              </ul>
+              <div class="cr__do">
+                <a class="btn btn--solid" href="#start">
+                  <span>Start a mobile project</span>
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Cloud Panel -->
+            <div class="cr__panel" role="tabpanel" id="panel-cloud" data-k="cloud" hidden>
+              <h3 class="cr__t">Cloud, DevOps & Automation</h3>
+              <p class="cr__line">Infrastructure designed to withstand traffic spikes with zero downtime.</p>
+              <p class="cr__get">
+                Automated Terraform configurations, containerized Docker and Kubernetes deployments, automated regression testing, and observability pipelines tracking every millisecond of latency.
+              </p>
+              <ul class="cr__items">
+                <li>AWS, GCP & Cloudflare Edge</li>
+                <li>Docker & Kubernetes Orchestration</li>
+                <li>CI/CD Automation Pipelines</li>
+                <li>Zero-Downtime Blue/Green Deploys</li>
+                <li>Observability & Telemetry</li>
+                <li>SOC2 & Cloud Security Compliance</li>
+              </ul>
+              <div class="cr__do">
+                <a class="btn btn--solid" href="#start">
+                  <span>Start an infrastructure project</span>
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Brand Panel -->
+            <div class="cr__panel" role="tabpanel" id="panel-brand" data-k="brand" hidden>
+              <h3 class="cr__t">Brand Identity & Digital Design Systems</h3>
+              <p class="cr__line">A visual mark, a system for using it, and the rules codified in production tokens.</p>
+              <p class="cr__get">
+                Built as a living design system, not just static logos: interactive component libraries, typography hierarchy, dark/light theme tokens, and guidelines that scale across all digital products.
+              </p>
+              <ul class="cr__items">
+                <li>Logomarks & Visual Language</li>
+                <li>Figma Design Tokens & Systems</li>
+                <li>Interactive Web Guidelines</li>
+                <li>Pitch Decks & Investor Assets</li>
+                <li>Product UI/UX Prototyping</li>
+                <li>Motion Guidelines</li>
+              </ul>
+              <div class="cr__do">
+                <a class="btn btn--solid" href="#start">
+                  <span>Start a design project</span>
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Metrics & Counterup (Metric9 Odometer Style) -->
+    <section class="counters-sec" id="counters">
+      <div class="counter-grid">
+        <div class="counter-item rv">
+          <div class="counter-num">
+            <span class="counter-val" data-target="13500">0</span>
+            <span class="suffix">+</span>
+          </div>
+          <span class="counter-lbl">Engineering Hours Logged</span>
+        </div>
+
+        <div class="counter-item rv" data-d="1">
+          <div class="counter-num">
+            <span class="counter-val" data-target="720">0</span>
+            <span class="suffix">+</span>
+          </div>
+          <span class="counter-lbl">Production Deployments</span>
+        </div>
+
+        <div class="counter-item rv" data-d="2">
+          <div class="counter-num">
+            <span class="counter-val" data-target="480">0</span>
+            <span class="suffix">+</span>
+          </div>
+          <span class="counter-lbl">Enterprise Clients</span>
+        </div>
+
+        <div class="counter-item rv" data-d="3">
+          <div class="counter-num">
+            <span class="counter-val" data-target="120">0</span>
+            <span class="suffix">+</span>
+          </div>
+          <span class="counter-lbl">Industry Awards & Recognitions</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work / Interactive Device Showcase (Metric9 Stage & Live Index) -->
+    <section class="sec work" id="work">
+      <div class="head">
+        <div>
+          <p class="kick rv">Selected Work</p>
+          <h2 class="h2 rv" data-d="1">Tested in production. Built to perform.</h2>
+        </div>
+        <p class="lead rv" data-d="2">
+          Explore our real-world deployments. Toggle between desktop and mobile viewports, or inspect the project index below.
+        </p>
+      </div>
+
+      <!-- Interactive Device Viewport -->
+      <div class="case__media rv" data-view="desk">
+        <div class="case__bar2">
+          <div class="case__switch" role="group" aria-label="Device viewport switcher">
+            <button type="button" id="viewDesk" aria-pressed="true">Desktop View</button>
+            <button type="button" id="viewPhone" aria-pressed="false">Mobile View</button>
+          </div>
+          <p class="case__hint">Hover or click any project below to inspect</p>
+        </div>
+
+        <div class="case__stage">
+          <!-- Desktop Mockup Frame -->
+          <div class="case__desk">
+            <div class="case__bar">
+              <div class="case__dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="url">https://invored.com/case/nexus-enterprise</span>
+            </div>
+            <div class="case__win">
+              <img id="caseDeskImg" src="./images/img1.jpg" alt="Featured Project Screen">
+            </div>
+          </div>
+
+          <!-- Mobile Phone Mockup Frame -->
+          <div class="case__phone">
+            <div class="case__win">
+              <img id="casePhoneImg" src="./images/img1.jpg" alt="Featured Mobile Screen">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metric9 Index List -->
+      <ul class="idx" aria-label="Client Projects">
+        <li class="idx__row rv" data-img="./images/img1.jpg" data-url="https://invored.com/case/nexus-platform">
+          <span class="idx__n mono">01</span>
+          <span class="idx__t">
+            Nexus Global Cloud
+            <span class="arrow">↗</span>
+          </span>
+          <span class="idx__c">Enterprise SaaS & High-Concurrency Microservices</span>
+          <span class="idx__s">Live in Production</span>
+        </li>
+
+        <li class="idx__row rv" data-d="1" data-img="./images/img2.jpg" data-url="https://invored.com/case/aether-ai">
+          <span class="idx__n mono">02</span>
+          <span class="idx__t">
+            Aether AI Agent Pipeline
+            <span class="arrow">↗</span>
+          </span>
+          <span class="idx__c">Autonomous LLM Reasoning Chains & Vector Search</span>
+          <span class="idx__s">Live in Production</span>
+        </li>
+
+        <li class="idx__row rv" data-d="2" data-img="./images/img3.jpg" data-url="https://invored.com/case/omni-pay">
+          <span class="idx__n mono">03</span>
+          <span class="idx__t">
+            Omni Financial Ecosystem
+            <span class="arrow">↗</span>
+          </span>
+          <span class="idx__c">Cross-Platform Mobile App & Biometric Security</span>
+          <span class="idx__s">Live in Production</span>
+        </li>
+
+        <li class="idx__row rv" data-d="3" data-soon data-img="./images/img2.jpg" data-url="https://invored.com/case/horizon-health">
+          <span class="idx__n mono">04</span>
+          <span class="idx__t">
+            Horizon Telemetry Engine
+            <span class="arrow">↗</span>
+          </span>
+          <span class="idx__c">Real-Time Sensor Ingestion & Diagnostic Dashboards</span>
+          <span class="idx__s">In Development</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Engineering Protocol / How It Works (Metric9 Paper Transition Sheet) -->
+    <section class="sec deal" id="start">
+      <div class="deal__sheet">
+        <div class="head head--stack">
+          <p class="kick rv">Engineering Protocol</p>
+          <h2 class="h2 rv" data-d="1">The terms, in writing, before anything starts.</h2>
+          <p class="lead rv" data-d="2">
+            The same transparent framework for a web system, a custom GenAI model, mobile engineering, or a design system.
+          </p>
+        </div>
+
+        <ol class="terms">
+          <li class="term rv">
+            <span class="term__n mono">01</span>
+            <h3>A fixed price, before we begin.</h3>
+            <p>Quoted per project sprint in writing. There are no surprise hourly invoices or opaque overages, because every milestone is scoped precisely.</p>
+          </li>
+
+          <li class="term rv" data-d="1">
+            <span class="term__n mono">02</span>
+            <h3>Half to start, the rest on production deployment.</h3>
+            <p>Engineering begins once the initial sprint deposit arrives. Nothing outside the agreed specification is billed without your explicit prior sign-off.</p>
+          </li>
+
+          <li class="term rv" data-d="2">
+            <span class="term__n mono">03</span>
+            <h3>Two comprehensive refinement rounds included.</h3>
+            <p>User feedback, QA testing, and design adjustments are integrated into every milestone deliverable before final release.</p>
+          </li>
+
+          <li class="term term--big rv">
+            <span class="term__n mono">04</span>
+            <h3>100% intellectual property & code ownership.</h3>
+            <p>Every repository commit, architectural diagram, and design token belongs to you. Zero proprietary lock-in.</p>
+          </li>
+        </ol>
+
+        <!-- Dynamic Interactive Brief Form (Metric9 Brief2) -->
+        <form class="brief2" id="brief" action="./contactme.php" method="POST" novalidate>
+          <div class="brief2__h">
+            <h2 class="brief2__t">Start yours.</h2>
+            <p class="brief2__s" id="briefLine" aria-live="polite">You need <u>a high-performance web application</u>.</p>
+          </div>
+
+          <fieldset class="q2">
+            <legend>What do you need engineered?</legend>
+            <div class="chips2">
+              <label>
+                <input type="radio" name="need" value="web" checked>
+                <span>Web Application</span>
+              </label>
+              <label>
+                <input type="radio" name="need" value="ai">
+                <span>Generative AI & LLMs</span>
+              </label>
+              <label>
+                <input type="radio" name="need" value="mobile">
+                <span>Mobile App Ecosystem</span>
+              </label>
+              <label>
+                <input type="radio" name="need" value="marketing">
+                <span>Digital Marketing & Growth</span>
+              </label>
+              <label>
+                <input type="radio" name="need" value="brand">
+                <span>Brand & Design System</span>
+              </label>
+              <label>
+                <input type="radio" name="need" value="unsure">
+                <span>Help Deciding</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="f2">
+            <label for="f-msg">Tell us about your project</label>
+            <textarea id="f-msg" name="message" rows="4" required placeholder="What is the objective, target users, timeline, or any technical requirements you have?"></textarea>
+          </div>
+
+          <div class="f2 f2--row">
+            <div>
+              <label for="f-name">Your name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="Jane Doe">
+            </div>
+            <div>
+              <label for="f-email">Your email</label>
+              <input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" required placeholder="jane@company.com">
+            </div>
+          </div>
+
+          <div class="f2 f2--row">
+            <div>
+              <label for="f-phone">Contact number</label>
+              <input id="f-phone" name="phone" type="tel" pattern="[0-9]{7,15}" required placeholder="+971 50 123 4567">
+            </div>
+            <div>
+              <label for="f-co">Company / Organization <span>(optional)</span></label>
+              <input id="f-co" name="company" type="text" autocomplete="organization" placeholder="Acme Technologies">
+            </div>
+          </div>
+
+          <div class="send2">
+            <button class="btn btn--ink" type="submit">
+              <span>Send the brief</span>
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <p class="send2__n">Delivered directly to info@invored.com — a senior engineer replies within 24 hours.</p>
+          </div>
+
+          <p class="formnote2" id="briefNote" role="status" aria-live="polite"></p>
         </form>
+
+        <p class="deal__alt">
+          Prefer direct email? Reach us at <a href="mailto:info@invored.com">info@invored.com</a>
+        </p>
+
+        <!-- Dark Styled Map Container -->
+        <div class="map-wrap rv">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14444.665715894127!2d55.26388484117849!3d25.180738450259832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8569c7921665a3%3A0xb35a0cf366579247!2sBusiness%20Bay%2C%20Dubai!5e0!3m2!1sen!2sae!4v1650000000000!5m2!1sen!2sae" loading="lazy" title="InvoRed Headquarters"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="testimonials-sec" id="testimonials">
+      <div class="head">
+        <div>
+          <p class="kick rv">Client Feedback</p>
+          <h2 class="h2 rv" data-d="1">Proven results. Verified by leadership.</h2>
+        </div>
+        <p class="lead rv" data-d="2">
+          What founders and technical executives say after shipping products with InvoRed.
+        </p>
+      </div>
+
+      <div class="test-grid">
+        <div class="test-card rv">
+          <div class="test-stars">★★★★★</div>
+          <p>"InvoRed architected our enterprise web application from scratch and delivered two weeks ahead of schedule. Their attention to performance and clean code is world-class."</p>
+          <div class="test-author">
+            <img class="test-avatar" src="./images/testimonial-1.jpg" alt="Client 1">
+            <div class="test-info">
+              <h4>Sarah Al-Mansoor</h4>
+              <span>CTO, Nexus Global</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="test-card rv" data-d="1">
+          <div class="test-stars">★★★★★</div>
+          <p>"The custom Generative AI agent pipeline InvoRed integrated cut our customer triage time by 75%. They don't just build software; they understand the business impact."</p>
+          <div class="test-author">
+            <img class="test-avatar" src="./images/testimonial-2.jpg" alt="Client 2">
+            <div class="test-info">
+              <h4>David Chen</h4>
+              <span>VP of Product, Aether AI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="test-card rv" data-d="2">
+          <div class="test-stars">★★★★★</div>
+          <p>"Their mobile development squad took our complex fintech specifications and built an iOS and Android experience that our users genuinely love. Zero bugs in audit."</p>
+          <div class="test-author">
+            <img class="test-avatar" src="./images/testimonial-3.jpg" alt="Client 3">
+            <div class="test-info">
+              <h4>Marcus Vance</h4>
+              <span>Founder & CEO, OmniPay</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engineering Team -->
+    <section class="team-sec" id="team">
+      <div class="head">
+        <div>
+          <p class="kick rv">The Engineering Squad</p>
+          <h2 class="h2 rv" data-d="1">The builders in the room.</h2>
+        </div>
+        <p class="lead rv" data-d="2">
+          No disconnected account managers. You collaborate directly with principal architects and lead engineers.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card rv">
+          <div class="team-img-wrap">
+            <img src="./images/pexels-andrea-piacquadio-845434.jpg" alt="Schott Watkins">
+          </div>
+          <div class="team-body">
+            <h3>Schott Watkins</h3>
+            <span>Principal Web Architect</span>
+            <div class="team-socials">
+              <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+              <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">gh</a>
+              <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">tw</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card rv" data-d="1">
+          <div class="team-img-wrap">
+            <img src="./images/pexels-vinicius-wiesehofer-1130624.jpg" alt="Nicole Bell">
+          </div>
+          <div class="team-body">
+            <h3>Nicole Bell</h3>
+            <span>Lead Mobile Systems Engineer</span>
+            <div class="team-socials">
+              <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+              <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">gh</a>
+              <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">tw</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card rv" data-d="2">
+          <div class="team-img-wrap">
+            <img src="./images/pexels-hussein-altameemi-2776353.jpg" alt="John Doe">
+          </div>
+          <div class="team-body">
+            <h3>John Doe</h3>
+            <span>AI Systems & Brand Strategist</span>
+            <div class="team-socials">
+              <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+              <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">gh</a>
+              <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">tw</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card rv" data-d="3">
+          <div class="team-img-wrap">
+            <img src="./images/pexels-andrea-piacquadio-745136.jpg" alt="Rose Matthews">
+          </div>
+          <div class="team-body">
+            <h3>Rose Matthews</h3>
+            <span>Senior UI/UX & Interaction Designer</span>
+            <div class="team-socials">
+              <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+              <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">gh</a>
+              <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">tw</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section (Metric9 Minimalist Accordion) -->
+    <section class="sec faq-sec" id="faq">
+      <div class="head head--stack">
+        <p class="kick rv">Frequently Asked Questions</p>
+        <h2 class="h2 rv" data-d="1">Straight answers. Zero ambiguity.</h2>
+      </div>
+
+      <div class="faq-list rv">
+        <div class="faq-item is-open">
+          <button type="button" class="faq-q">
+            <h3>How much does a project typically cost?</h3>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>
+              Every project is quoted at a fixed price in writing based on clearly defined functional milestones. Rather than ambiguous hourly retainers, we provide an all-inclusive specification covering design, backend architecture, security, and deployment.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-q">
+            <h3>How long does end-to-end design and engineering take?</h3>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>
+              Standard sprint deliverables range between 3 to 8 weeks depending on scope complexity. Fast-track MVPs can launch in as few as 2 weeks, while large-scale multi-platform systems are partitioned into bi-weekly production releases.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-q">
+            <h3>Can you modernize our existing codebase or application?</h3>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>
+              Yes. We regularly perform comprehensive architectural audits, UI/UX redesigns, performance refactoring, and AI integrations into existing production systems with zero downtime.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-q">
+            <h3>What is the payment structure?</h3>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>
+              We adhere to a transparent milestone model: 50% deposit to initiate engineering, and 50% upon final acceptance and production deployment. Two complete refinement rounds are baked into the agreement.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-q">
+            <h3>Who owns the intellectual property and code?</h3>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>
+              You own 100% of the repository, source code, visual assets, design tokens, and documentation. Everything is transferred to your organization upon project completion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (Metric9 Big Typographic Brand Footprint) -->
+  <footer class="foot">
+    <div class="foot__top">
+      <div class="foot__big" aria-hidden="true">
+        Invo<span class="n">Red</span>
+      </div>
+      <div class="foot__line">
+        <span>AI & Digital Engineering Studio · Dubai · Worldwide</span>
+        <a class="foot__mail" href="mailto:info@invored.com">info@invored.com</a>
+      </div>
     </div>
+
+    <nav class="foot__nav" aria-label="Footer Site Directory">
+      <div class="foot__col">
+        <p class="foot__h">Capabilities</p>
+        <a href="#service">Web Architecture</a>
+        <a href="#service">Generative AI & LLMs</a>
+        <a href="#service">Mobile Engineering</a>
+        <a href="#service">Cloud Infrastructure</a>
+        <a href="#service">Brand Design Systems</a>
+      </div>
+
+      <div class="foot__col">
+        <p class="foot__h">Studio</p>
+        <a href="#about">About InvoRed</a>
+        <a href="#work">Selected Work</a>
+        <a href="#team">Engineering Squad</a>
+        <a href="careers.html">Careers & Openings</a>
+        <a href="#start">Start a Project</a>
+      </div>
+
+      <div class="foot__col">
+        <p class="foot__h">Information</p>
+        <a href="#faq">FAQ</a>
+        <a href="#start">Engineering Protocol</a>
+        <a href="#counters">Impact Metrics</a>
+        <a href="mailto:info@invored.com">Direct Consultation</a>
+      </div>
+
+      <div class="foot__col">
+        <p class="foot__h">Connect</p>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter / X</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </nav>
+
+    <div class="foot__base">
+      <p class="foot__copy">© 2026 InvoRed Technologies. All rights reserved.</p>
+      <div class="foot__status">
+        <span class="dot"></span>
+        <span>ALL SYSTEMS OPERATIONAL · 99.98% MODEL UPTIME</span>
+      </div>
     </div>
+  </footer>
 
-    <section class="faq">
-      <h1 class="heading" style="margin-top: -2rem; color: #00bfff;" id="faq">FAQ</h1>
-      <div class="row">
-          <div class="accordion-container">
-              <div class="accordion">
-                  <div class="accordion-header">
-                      <span>+</span>
-                      <h3>How much will it cost?</h3>
-                  </div>
-                  <div class="accordion-body">
-                      <p>To get a better idea of the cost of what you want to build, give us a quick phone call. We’ll ask you a few questions about the nature of the site, what sort of interactivity the site will have, your graphic design needs, etc. 
-                          Then we’ll be able to give you a ballpark figure. 
-                          If you’re still interested, we’ll come to your place of business and come up with a firm quote.</p>
-                  </div>
-              </div>
-              <div class="accordion">
-                  <div class="accordion-header">
-                      <span>+</span>
-                      <h3>How long it takes to design?</h3>
-                  </div>
-                  <div class="accordion-body">
-                      <p>The time limit of any assignment is normally dictated by the client. If you have any time limit in mind we will attempt to assemble it for you. 
-                          The main general delay in the making of a website is waiting for the content of the pages to be sent to us by the client.</p>
-                  </div>
-              </div>
-              <div class="accordion">
-                  <div class="accordion-header">
-                      <span>+</span>
-                      <h3>How do I associate with InvoRed?</h3>
-                  </div>
-                  <div class="accordion-body">
-                      <p>The process begins when you contact us with your requirements. We analyze your requirements and respond to you. 
-                          On the basis of the further discussion, you can choose an engagement model that suits you the best. 
-                          After that, we begin the process of development.</p>
-                  </div>
-              </div>
-              <div class="accordion">
-                  <div class="accordion-header">
-                      <span>+</span>
-                      <h3>Can you help my current site look more professional?</h3>
-                  </div>
-                  <div class="accordion-body">
-                      <p>Yes. Give us your requirements and we have experienced expertise to help you give a 
-                          new professional look that really wonders!</p>
-                  </div>
-              </div>
-              <div class="accordion">
-                  <div class="accordion-header">
-                      <span>+</span>
-                      <h3>When do I pay?</h3>
-                  </div>
-                  <div class="accordion-body">
-                      <p>For most projects, equal payments are made at the start, midway, and the end of the project, but we can work with you to set up a schedule that meets your needs. 
-                          We understand that this is a big investment and want to help you budget for the expense in whatever way possible.
-                          We accept checks, PayPal, and all major credit cards.</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
+  <!-- Floating Back to Top Button -->
+  <a href="#top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </a>
 
-    <div class="footer">
-      <div class="footer-top">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-3 col-md-6 footer-links">
-                      <h4>About Us</h4>
-                      <ul>
-                          <li><i class="ion-ios-arrow-forward"></i> <a href="#">Home</a></li>
-                          <li><i class="ion-ios-arrow-forward"></i> <a href="#about">About us</a></li>
-                          <li><i class="ion-ios-arrow-forward"></i> <a href="#service">Our services</a></li>
-                          <li><i class="ion-ios-arrow-forward"></i> <a href="#">Terms & condition</a></li>
-                          <li><i class="ion-ios-arrow-forward"></i> <a href="#">Privacy policy</a></li>
-                      </ul>
-                  </div>
-
-                  <div class="col-lg-3 col-md-6 footer-links">
-                      <h4>Useful Links</h4>
-                      <ul>
-                          <li><i class="ion-ios-arrow-forward"></i> <a href="#portfolio">Portfolio</a></li>
-                          <li><i class="ion-ios-arrow-forward"></i> <a href="#team">Team</a></li>
-                          <li><i class="ion-ios-arrow-forward"></i> <a href="careers.html">Career</a></li>
-                          <li><i class="ion-ios-arrow-forward"></i> <a href="#contact">Contact</a></li>
-                          <li><i class="ion-ios-arrow-forward"></i> <a href="#faq">FAQ</a></li>
-                      </ul>
-                  </div>
-
-                  <div class="col-lg-3 col-md-6 footer-contact" style="font-size: 1.5rem;">
-                      <h4>Contact Us</h4>
-                      <p>
-                          InvoRed,businessBay,Dubai,UAE <br>
-                          <strong>Phone:</strong> 0324872U9<br>
-                          <strong>Email:</strong> info@invored.com<br>
-                      </p>
-
-                      <div class="social-links">
-                          <a href="https://www.facebook.com/"><i class="ion-logo-facebook"></i></a>
-                          <a href="https://twitter.com/login?lang=en"><i class="ion-logo-twitter"></i></a>
-                          <a href="https://www.linkedin.com/"><i class="ion-logo-linkedin"></i></a>
-                          <a href="https://www.instagram.com/"><i class="ion-logo-instagram"></i></a>
-                          <a href="https://accounts.google.com/servicelogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="ion-logo-googleplus"></i></a>
-                      </div>
-
-                  </div>
-
-                  <div class="col-lg-3 col-md-6 footer-newsletter">
-                      <h4>Subscription</h4>
-                      <p>With Our Skills Put Together, You Get An Ensemble Capable Of Doing Anything And Everything Your Brand Needs. Subscribe Here To Get Our Latest Updates.</p>
-                      <form action="" method="post">
-                          <input type="email" name="email"><input type="submit"  value="Subscribe">
-                      </form>
-                  </div>
-
-              </div>
-          </div>
-      </div>
-
-      <div class="container">
-          <div class="row align-items-center">
-              <div class="col-md-6 copyright" style="color: #fff; font-size: 1.3rem;">
-                Copyright © 2025 Invored - All Rights Reserved.
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
 </body>
 </html>
