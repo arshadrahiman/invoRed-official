@@ -6,6 +6,9 @@
   <title>InvoRed — Next-Gen AI & Digital Engineering Studio</title>
   <meta name="description" content="InvoRed is a premier AI and digital engineering studio. High-performance web applications, custom Generative AI pipelines, mobile products, and brand systems, engineered with fixed milestone transparency.">
   <meta name="theme-color" content="#07080A">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <link rel="icon" type="image/png" href="./images/image.png">
 
   <!-- Google Fonts Preconnect -->
@@ -14,18 +17,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300..900;1,300..900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Core Stylesheet -->
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.css?v=20261118_v3">
 
   <!-- Main Interaction Engine -->
-  <script src="./js/main.js" defer></script>
+  <script src="./js/main.js?v=20261118_v3" defer></script>
 </head>
 <body>
 
   <!-- Floating Glass Navigation -->
   <header class="nav" id="nav">
     <a class="brand" href="#top">
-      <span class="brand-icon"><i>9</i></span>
-      <img src="./images/image.png" alt="InvoRed" class="brand-logo-img">
       <span class="brand-txt">Invo<span>Red</span></span>
     </a>
 
@@ -35,7 +36,6 @@
       <a href="#service">Capabilities</a>
       <a href="#work">Work</a>
       <a href="#counters">Impact</a>
-      <a href="#team">Team</a>
       <a href="careers.html">Careers</a>
       <a href="#faq">FAQ</a>
     </nav>
@@ -51,7 +51,7 @@
     </div>
   </header>
 
-  <!-- Fullscreen Radial Clip-Path Menu (Metric9) -->
+  <!-- Fullscreen Radial Clip-Path Menu -->
   <div class="menu" id="menu" aria-hidden="true">
     <ul>
       <li><a href="#top"><small>01</small><span>Home</span></a></li>
@@ -59,10 +59,9 @@
       <li><a href="#service"><small>03</small><span>Capabilities</span></a></li>
       <li><a href="#work"><small>04</small><span>Selected Work</span></a></li>
       <li><a href="#counters"><small>05</small><span>Impact</span></a></li>
-      <li><a href="#team"><small>06</small><span>Team</span></a></li>
-      <li><a href="careers.html"><small>07</small><span>Careers</span></a></li>
-      <li><a href="#faq"><small>08</small><span>FAQ</span></a></li>
-      <li><a href="#start"><small>09</small><span>Start a Project</span></a></li>
+      <li><a href="careers.html"><small>06</small><span>Careers</span></a></li>
+      <li><a href="#faq"><small>07</small><span>FAQ</span></a></li>
+      <li><a href="#start"><small>08</small><span>Start a Project</span></a></li>
     </ul>
     <div class="menu__f">
       <span>AI & Digital Engineering Studio</span>
@@ -72,7 +71,7 @@
 
   <main id="main" tabindex="-1">
 
-    <!-- Hero Section (Metric9 Interactive Vector Canvas & 3D Card Deck) -->
+    <!-- Hero Section (Interactive Vector Canvas & 3D Card Deck) -->
     <section class="hero" id="top">
       <canvas class="fieldbg" id="field" aria-hidden="true"></canvas>
 
@@ -149,7 +148,7 @@
       </div>
     </section>
 
-    <!-- Crafts / Services Section (Metric9 Interactive Tabs & 3D Art Card) -->
+    <!-- Crafts / Services Section -->
     <section class="sec crafts" id="service" data-k="web">
       <div class="head head--stack">
         <p class="kick rv">Our Crafts</p>
@@ -308,7 +307,7 @@
       </div>
     </section>
 
-    <!-- Key Metrics & Counterup (Metric9 Odometer Style) -->
+    <!-- Key Metrics & Counterup (Odometer Style) -->
     <section class="counters-sec" id="counters">
       <div class="counter-grid">
         <div class="counter-item rv">
@@ -345,7 +344,7 @@
       </div>
     </section>
 
-    <!-- Selected Work / Interactive Device Showcase (Metric9 Stage & Live Index) -->
+    <!-- Selected Work / Interactive Device Showcase -->
     <section class="sec work" id="work">
       <div class="head">
         <div>
@@ -390,7 +389,7 @@
         </div>
       </div>
 
-      <!-- Metric9 Index List -->
+      <!-- Project Index List -->
       <ul class="idx" aria-label="Client Projects">
         <li class="idx__row rv" data-img="./images/img1.jpg" data-url="https://invored.com/case/nexus-platform">
           <span class="idx__n mono">01</span>
@@ -434,7 +433,7 @@
       </ul>
     </section>
 
-    <!-- Engineering Protocol / How It Works (Metric9 Paper Transition Sheet) -->
+    <!-- Engineering Protocol / How It Works -->
     <section class="sec deal" id="start">
       <div class="deal__sheet">
         <div class="head head--stack">
@@ -471,7 +470,7 @@
           </li>
         </ol>
 
-        <!-- Dynamic Interactive Brief Form (Metric9 Brief2) -->
+        <!-- Dynamic Interactive Brief Form -->
         <form class="brief2" id="brief" action="./contactme.php" method="POST" novalidate>
           <div class="brief2__h">
             <h2 class="brief2__t">Start yours.</h2>
@@ -608,7 +607,8 @@
       </div>
     </section>
 
-    <!-- Engineering Team -->
+    <!-- Engineering Team (Hidden for now) -->
+    <!--
     <section class="team-sec" id="team">
       <div class="head">
         <div>
@@ -682,8 +682,9 @@
         </div>
       </div>
     </section>
+    -->
 
-    <!-- FAQ Section (Metric9 Minimalist Accordion) -->
+    <!-- FAQ Section -->
     <section class="sec faq-sec" id="faq">
       <div class="head head--stack">
         <p class="kick rv">Frequently Asked Questions</p>
@@ -755,7 +756,7 @@
 
   </main>
 
-  <!-- Footer (Metric9 Big Typographic Brand Footprint) -->
+  <!-- Footer -->
   <footer class="foot">
     <div class="foot__top">
       <div class="foot__big" aria-hidden="true">
@@ -781,7 +782,6 @@
         <p class="foot__h">Studio</p>
         <a href="#about">About InvoRed</a>
         <a href="#work">Selected Work</a>
-        <a href="#team">Engineering Squad</a>
         <a href="careers.html">Careers & Openings</a>
         <a href="#start">Start a Project</a>
       </div>

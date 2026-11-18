@@ -1,6 +1,15 @@
 /* ==========================================================================
-   INVO-RED | Careers Page Stylesheet (Metric9 Aesthetic)
+   INVO-RED | Careers Page Stylesheet (Engineering Studio Aesthetic)
    ========================================================================== */
+
+/* Eradicate any brand-icon or badge 9 */
+.brand-icon, .brand-logo-img, .brand i, .brand [class*="icon"], [data-badge="9"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+}
 
 .careers-hero {
   position: relative;

@@ -1,6 +1,6 @@
 /* ==========================================================================
    INVO-RED | Premium Gen-AI & Digital Engineering Studio
-   Design System & Motion Architecture (Inspired by Metric9)
+   Design System & Motion Architecture
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300..900;1,300..900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
@@ -20,7 +20,7 @@
   --mist-60: rgba(240, 242, 238, 0.64);
   --mist-30: rgba(240, 242, 238, 0.32);
 
-  /* Tactical Paper Transition (Metric9 signature) */
+  /* Tactical Paper Transition */
   --paper: #ECEAE3;
   --paper-ink: #0E0F11;
   --paper-line: rgba(14, 15, 17, 0.14);
@@ -160,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   Navigation Bar (Metric9 Floating Glass)
+   Navigation Bar
    ========================================================================== */
 .nav {
   position: fixed;
@@ -193,52 +193,63 @@ h1, h2, h3, h4, h5, h6 {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   font-weight: 700;
   letter-spacing: -0.035em;
   font-size: 1.15rem;
   color: var(--mist);
+  text-decoration: none;
 }
 
-.brand-icon {
-  width: 24px;
-  height: 24px;
-  border-radius: 6px;
-  background: linear-gradient(135deg, var(--signal), #0077ff);
-  display: grid;
-  place-items: center;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 0.82rem;
-  color: #07080A;
-  box-shadow: 0 0 14px rgba(0, 242, 254, 0.5);
-  transition: transform 0.5s var(--ease), box-shadow 0.4s;
-}
-
-.brand:hover .brand-icon {
-  transform: rotate(90deg) scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 242, 254, 0.8);
-}
-
-.brand-logo-img {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-  border-radius: 6px;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 2px;
+/* Eradicate any badge 9, brand icon box, or stray referral badge */
+.brand-icon,
+.brand-logo-img,
+.brand i,
+.brand [class*="icon"],
+[data-icon="9"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0) !important;
+  pointer-events: none !important;
 }
 
 .brand-txt {
   font-family: var(--sans);
   font-weight: 800;
-  font-size: 1.25rem;
+  font-size: 1.38rem;
   letter-spacing: -0.04em;
   color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.3s var(--ease);
+}
+
+.brand:hover .brand-txt {
+  transform: translateY(-1px);
 }
 
 .brand-txt span {
   color: var(--accent-secondary);
+}
+
+.brand-txt::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent);
+  margin-left: 2px;
 }
 
 .links {
@@ -366,7 +377,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Full-Screen Radial Clip-Path Menu (Metric9) */
+/* Full-Screen Radial Clip-Path Menu */
 .menu {
   position: fixed;
   inset: 0;
@@ -1049,7 +1060,7 @@ body.is-loaded .hero__cta {
 }
 
 /* ==========================================================================
-   Crafts / Services Section (Metric9 Interactive Tabs & 3D Art)
+   Crafts / Services Section
    ========================================================================== */
 .crafts {
   background: #080A0D;
@@ -1298,7 +1309,7 @@ body.is-loaded .hero__cta {
 }
 
 /* ==========================================================================
-   Interactive Showcase / Work Section (Metric9 Device & Live Index)
+   Interactive Showcase / Work Section
    ========================================================================== */
 .work {
   padding: clamp(80px, 12vh, 160px) var(--g) clamp(60px, 10vh, 120px);
@@ -1434,7 +1445,7 @@ body.is-loaded .hero__cta {
 [data-view="phone"] .case__desk { display: none; }
 [data-view="phone"] .case__phone { display: block; }
 
-/* Interactive Project Index Rows (Metric9) */
+/* Interactive Project Index Rows */
 .idx {
   list-style: none;
   margin: 0;
@@ -1553,7 +1564,7 @@ body.is-loaded .hero__cta {
 }
 
 /* ==========================================================================
-   Engineering Protocol / How It Works (Metric9 Paper Transition Sheet)
+   Engineering Protocol / How It Works
    ========================================================================== */
 .deal {
   padding: 0;
@@ -1656,7 +1667,7 @@ body.is-loaded .hero__cta {
 }
 
 /* ==========================================================================
-   Interactive Dynamic Brief Form (Metric9 High-Conversion Brief2)
+   Interactive Dynamic Brief Form
    ========================================================================== */
 .brief2 {
   display: grid;
@@ -1965,7 +1976,7 @@ body.is-loaded .hero__cta {
 }
 
 /* ==========================================================================
-   Team Section (Modern Metric9 Vibe)
+   Team Section
    ========================================================================== */
 .team-sec {
   background: var(--ink-2);
@@ -2068,7 +2079,7 @@ body.is-loaded .hero__cta {
 }
 
 /* ==========================================================================
-   FAQ Section (Metric9 Minimalist Accordion)
+   FAQ Section
    ========================================================================== */
 .faq-sec {
   background: var(--ink);
@@ -2150,7 +2161,7 @@ body.is-loaded .hero__cta {
 }
 
 /* ==========================================================================
-   Footer (Metric9 Massive Brand Footprint)
+   Footer
    ========================================================================== */
 .foot {
   background: var(--ink);

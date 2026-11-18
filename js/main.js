@@ -1,10 +1,21 @@
 /**
  * INVO-RED | Motion & Interaction Core
- * Inspired by Metric9 (Canvas Field, 3D Perspective Card Deck, Dynamic Brief)
+ * Core Engine (Canvas Field, 3D Perspective Card Deck, Dynamic Brief)
  */
 
 (function () {
   "use strict";
+
+  // Active Purge: Ensure any cached or stray referral badge or '9' mark is removed from DOM
+  const purgeStrayBadges = () => {
+    document.querySelectorAll('.brand-icon, .brand-logo-img, [class*="brand-icon"]').forEach(el => el.remove());
+    document.querySelectorAll('.brand *').forEach(el => {
+      if (el.tagName === 'I' || (el.textContent && el.textContent.trim() === '9')) {
+        el.remove();
+      }
+    });
+  };
+  purgeStrayBadges();
 
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -15,6 +26,7 @@
 
   // Initialize all subsystems when DOM is ready
   document.addEventListener("DOMContentLoaded", () => {
+    purgeStrayBadges();
     initLoadedState();
     initAmbientCursor();
     initNav();
@@ -126,7 +138,7 @@
   }
 
   /* --------------------------------------------------------------------------
-     4. Interactive Vector Canvas Field (Metric9 Vector Mathematics)
+     4. Interactive Vector Canvas Field
      -------------------------------------------------------------------------- */
   function initField() {
     const c = $("#field");
@@ -248,7 +260,7 @@
   }
 
   /* --------------------------------------------------------------------------
-     6. 3D Interactive Card Deck & Perspective Stage (Metric9 Core)
+     6. 3D Interactive Card Deck & Perspective Stage
      -------------------------------------------------------------------------- */
   const CRAFTS_DATA = [
     {
@@ -536,7 +548,7 @@
   }
 
   /* --------------------------------------------------------------------------
-     9. Interactive Work Showcase (Metric9 Device Switcher & Hover Index)
+     9. Interactive Work Showcase
      -------------------------------------------------------------------------- */
   function initWorkShowcase() {
     const media = $(".case__media");
@@ -583,7 +595,7 @@
   }
 
   /* --------------------------------------------------------------------------
-     10. Dynamic Brief Form (Metric9 Interactive Brief2 with AJAX)
+     10. Dynamic Brief Form with AJAX
      -------------------------------------------------------------------------- */
   function initBriefForm() {
     const form = $("#brief");
